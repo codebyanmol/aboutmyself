@@ -10,7 +10,7 @@ Hey! I’m **Anmol Khadka**, a Python wizard, web tinkerer, and Linux maestro. T
 
 ## 🖥️ Peek Inside
 - **Projects:** Python scripts, web apps, Linux tools — all hand-crafted.  
-- **Skills:** Practical, clean, and modern.  
+- **Skills:** Practical, clean, and modern.  https://codebyanmol.github.io/aboutmyself/
 - **Aesthetic vibes:** Smooth animations, sleek fonts, subtle flair.  
 - **Contact:** Connect, collaborate, or just say hi.  
 
@@ -48,6 +48,6 @@ VS Code 💻 | Terminal Magic ✨ | APIs & Automation 🔧
 I like my websites like I like my code — **fast, clean, and a little flashy.**  
 
 Explore, enjoy, get inspired, or just stay awhile 😉  
-
+website: https://codebyanmol.github.io/aboutmyself/
 
 🎨 Made with ❤️, code, and coffee ☕
