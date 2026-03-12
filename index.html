@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Anmol Khadka · developer & linux wrangler</title>
+  <!-- fonts & icons – hand picked, no corporate garbage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- font awesome 6 free & devicons (for real tech vibe) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="logo"><a href="#hero">AK<span>_</span></a></div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero section">
+    <div class="hero-grid container">
+      <div class="hero-content">
+        <div class="status-pill"><i class="fa-solid fa-mug-hot"></i> Currently: Writing code in Kathmandu</div>
+        <div class="hello-mono">< Hello World /></div>
+        <h1 class="hero-name">Anmol Khadka</h1>
+        <div class="typed-container">I'm a <span id="typed-text"></span></div>
+        <p class="hero-description">I build elegant software, wrangle servers, and write Python that actually works.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#" class="btn btn-outline" download><i class="fa-regular fa-file-pdf"></i> Download CV</a>
+        </div>
+        <div class="social-row">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <span class="line"><span class="comment"># anmol_khadka.py</span></span>
+          <span class="line"><span class="keyword">class</span> <span class="keyword">Developer</span>:</span>
+          <span class="line">    <span class="keyword">name</span> = <span class="string">"Anmol Khadka"</span></span>
+          <span class="line">    <span class="keyword">location</span> = <span class="string">"Nepal 🇳🇵"</span></span>
+          <span class="line">    <span class="keyword">skills</span> = [<span class="string">"Python"</span>, <span class="string">"Django"</span>, <span class="string">"Linux"</span>, <span class="string">"Web Dev"</span>]</span>
+          <span class="line">    </span>
+          <span class="line">    <span class="keyword">def</span> <span class="keyword">current_status</span>(self):</span>
+          <span class="line">        <span class="keyword">return</span> <span class="string">"Building cool things ✨"</span></span>
+          <span class="line">    </span>
+          <span class="line">    <span class="keyword">def</span> <span class="keyword">contact</span>(self):</span>
+          <span class="line">        <span class="keyword">return</span> <span class="string">"anmol@example.com"</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,0 Q30,25 60,0 T120,0 T180,0 T240,0 T300,0 T360,0 T420,0 T480,0 T540,0 T600,0 T660,0 T720,0 T780,0 T840,0 T900,0 T960,0 T1020,0 T1080,0 T1140,0 T1200,0 V30 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <div class="section-number">01. —</div>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div>
+        <div class="avatar-circle">AK</div>
+        <div class="stat-pills">
+          <span class="stat-pill"><i class="fa-regular fa-calendar"></i> 3+ Years Experience</span>
+          <span class="stat-pill"><i class="fa-solid fa-code"></i> 20+ Projects</span>
+          <span class="stat-pill"><i class="fa-regular fa-star"></i> Open Source Contributor</span>
+        </div>
+      </div>
+      <div class="bio">
+        <p>Hey, I'm Anmol — a developer based in Nepal who's genuinely obsessed with writing clean Python and tinkering with Linux systems. I started programming out of curiosity, stayed for the craft.</p>
+        <p>I specialize in backend development with Python and Django, building web applications that are fast, maintainable, and actually enjoyable to work on. When I'm not writing code, I'm probably customizing my Arch Linux setup or contributing to open source projects.</p>
+        <p>I believe great software comes from understanding both the user and the machine. That's why I care as much about developer experience and system internals as I do about the final product.</p>
+        <div class="quick-facts">
+          <span class="fact-item"><i class="fa-regular fa-map-pin"></i> Kathmandu, Nepal</span>
+          <span class="fact-item"><i class="fa-regular fa-graduation-cap"></i> CS / Self-taught</span>
+          <span class="fact-item"><i class="fa-regular fa-handshake"></i> Freelance, Remote</span>
+          <span class="fact-item"><i class="fa-regular fa-leaf"></i> Learning Rust, Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,30 Q30,5 60,30 T120,30 T180,30 T240,30 T300,30 T360,30 T420,30 T480,30 T540,30 T600,30 T660,30 T720,30 T780,30 T840,30 T900,30 T960,30 T1020,30 T1080,30 T1140,30 T1200,30 V0 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <div class="section-number">02. —</div>
+    <h2 class="section-title">Tech Stack & Skills</h2>
+    <div class="skill-category">
+      <h3>Languages & Core</h3>
+      <div class="skill-grid">
+        <span class="skill-card"><i class="devicon-python-plain"></i> Python</span>
+        <span class="skill-card"><i class="devicon-javascript-plain"></i> JavaScript</span>
+        <span class="skill-card"><i class="devicon-bash-plain"></i> Bash</span>
+        <span class="skill-card"><i class="devicon-mysql-plain"></i> SQL</span>
+        <span class="skill-card"><i class="devicon-html5-plain"></i> HTML5</span>
+        <span class="skill-card"><i class="devicon-css3-plain"></i> CSS3</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Frameworks & Tools</h3>
+      <div class="skill-grid">
+        <span class="skill-card"><i class="devicon-django-plain"></i> Django</span>
+        <span class="skill-card"><i class="devicon-flask-original"></i> Flask</span>
+        <span class="skill-card"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+        <span class="skill-card"><i class="devicon-react-original"></i> React</span>
+        <span class="skill-card"><i class="devicon-nodejs-plain"></i> Node.js</span>
+        <span class="skill-card"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+        <span class="skill-card"><i class="devicon-redis-plain"></i> Redis</span>
+        <span class="skill-card"><i class="devicon-docker-plain"></i> Docker</span>
+        <span class="skill-card"><i class="devicon-nginx-original"></i> Nginx</span>
+        <span class="skill-card"><i class="devicon-git-plain"></i> Git</span>
+        <span class="skill-card"><i class="devicon-linux-plain"></i> Linux</span>
+        <span class="skill-card"><i class="devicon-vim-plain"></i> Vim</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Linux & DevOps</h3>
+      <div class="skill-grid">
+        <span class="skill-card"><i class="devicon-archlinux-plain"></i> Arch</span>
+        <span class="skill-card"><i class="devicon-ubuntu-plain"></i> Ubuntu</span>
+        <span class="skill-card"><i class="devicon-debian-plain"></i> Debian</span>
+        <span class="skill-card"><span class="fa-regular fa-gear"></span> systemd</span>
+        <span class="skill-card"><span class="fa-regular fa-clock"></span> cron</span>
+        <span class="skill-card"><i class="fa-solid fa-terminal"></i> bash</span>
+        <span class="skill-card">CI/CD</span>
+        <span class="skill-card">server hardening</span>
+      </div>
+    </div>
+    <div class="exploring-row">
+      <span><i class="fa-regular fa-compass"></i> Currently exploring:</span>
+      <span>Rust</span><span>Kubernetes</span><span>AWS/GCP</span>
+    </div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,0 Q30,25 60,0 T120,0 T180,0 T240,0 T300,0 T360,0 T420,0 T480,0 T540,0 T600,0 T660,0 T720,0 T780,0 T840,0 T900,0 T960,0 T1020,0 T1080,0 T1140,0 T1200,0 V30 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <div class="section-number">03. —</div>
+    <h2 class="section-title">Projects I'm Proud Of</h2>
+    <div class="projects-grid">
+      <!-- project 1 -->
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">PyTask</h3><p class="project-desc">CLI task manager with SQLite, tags, priorities & JSON export.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">Click</span><span class="tag">Rich</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">DevBlog CMS</h3><p class="project-desc">Full‑stack blog with Django + HTMX, Markdown, syntax highlight.</p><div class="project-tags"><span class="tag">Django</span><span class="tag">HTMX</span><span class="tag">PostgreSQL</span><span class="tag">Tailwind</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">LinuxDotfiles</h3><p class="project-desc">Curated Arch Linux dotfiles: Neovim, Zsh, i3/Hyprland, tmux.</p><div class="project-tags"><span class="tag">Bash</span><span class="tag">Lua</span><span class="tag">Shell</span><span class="tag">Linux</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">WebScraper Pro</h3><p class="project-desc">Async scraper with aiohttp, proxy rotation, rate limiting.</p><div class="project-tags"><span class="tag">Python</span><span class="tag">aiohttp</span><span class="tag">BeautifulSoup</span><span class="tag">asyncio</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">Portfolio API</h3><p class="project-desc">REST API built with FastAPI, auto‑documented with Swagger.</p><div class="project-tags"><span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">Python</span><span class="tag">REST</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+      <div class="project-card"><div class="card-accent"></div><div class="card-content"><h3 class="project-title">SysMonitor Dashboard</h3><p class="project-desc">Real‑time Linux monitor (CPU, RAM, disk) using Flask + WebSocket.</p><div class="project-tags"><span class="tag">Flask</span><span class="tag">SocketIO</span><span class="tag">Linux</span><span class="tag">Chart.js</span></div><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div></div>
+    </div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,30 Q30,5 60,30 T120,30 T180,30 T240,30 T300,30 T360,30 T420,30 T480,30 T540,30 T600,30 T660,30 T720,30 T780,30 T840,30 T900,30 T960,30 T1020,30 T1080,30 T1140,30 T1200,30 V0 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <div class="section-number">04. —</div>
+    <h2 class="section-title">Experience & Journey</h2>
+    <div class="timeline">
+      <!-- item 1 left -->
+      <div class="timeline-item left">
+        <div class="timeline-content"><h4>Freelance Python Developer</h4><div class="timeline-date">2022 – Present</div><p>Built custom automation scripts, scrapers, and APIs for global clients. Managed Linux server deployments.</p></div>
+        <div class="timeline-dot"></div><div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-empty"></div><div class="timeline-dot"></div>
+        <div class="timeline-content"><h4>Web Developer Intern</h4><div class="timeline-date">2021 – 2022</div><p>Maintained Django web apps, worked with REST APIs, PostgreSQL, deployed to Ubuntu VPS.</p></div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content"><h4>Open Source Contributor</h4><div class="timeline-date">2020 – Present</div><p>Regular contributor to Python & Linux projects. dotfiles repo with 100+ GitHub stars.</p></div>
+        <div class="timeline-dot"></div><div class="timeline-empty"></div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-empty"></div><div class="timeline-dot"></div>
+        <div class="timeline-content"><h4>Self‑Taught Developer</h4><div class="timeline-date">2019 – 2021</div><p>Learned Python, Linux, web dev through projects. Built first web app at 17.</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,0 Q30,25 60,0 T120,0 T180,0 T240,0 T300,0 T360,0 T420,0 T480,0 T540,0 T600,0 T660,0 T720,0 T780,0 T840,0 T900,0 T960,0 T1020,0 T1080,0 T1140,0 T1200,0 V30 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- BLOG -->
+  <section id="blog" class="section container">
+    <div class="section-number">05. —</div>
+    <h2 class="section-title">Writing & Thoughts</h2>
+    <div class="blog-grid">
+      <div class="blog-card"><div class="blog-category">Linux</div><h3 class="blog-title">Why I Switched to Neovim (And Never Looked Back)</h3><p class="blog-excerpt">Modal editing, Lua config, and a plugin ecosystem that actually makes sense...</p><div class="blog-meta"><span>5 min read</span><span>Apr 2024</span></div><a href="#" class="read-more">Read More →</a></div>
+      <div class="blog-card"><div class="blog-category">Python</div><h3 class="blog-title">Building Async Python Scrapers That Don't Break</h3><p class="blog-excerpt">aiohttp, retries, backoffs – make thousands of requests without tears.</p><div class="blog-meta"><span>7 min read</span><span>Feb 2024</span></div><a href="#" class="read-more">Read More →</a></div>
+      <div class="blog-card"><div class="blog-category">Web Dev</div><h3 class="blog-title">Django vs FastAPI: When to Use What</h3><p class="blog-excerpt">Batteries‑included vs async speed – choosing the right tool.</p><div class="blog-meta"><span>6 min read</span><span>Dec 2023</span></div><a href="#" class="read-more">Read More →</a></div>
+    </div>
+    <div class="view-all"><a href="#" class="btn btn-outline">View All Posts <i class="fa-regular fa-arrow-right"></i></a></div>
+  </section>
+  <div class="wave-divider"><svg viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,30 Q30,5 60,30 T120,30 T180,30 T240,30 T300,30 T360,30 T420,30 T480,30 T540,30 T600,30 T660,30 T720,30 T780,30 T840,30 T900,30 T960,30 T1020,30 T1080,30 T1140,30 T1200,30 V0 H0 Z" fill="#1A4731" opacity="0.06"/></svg></div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <div class="section-number">06. —</div>
+    <h2 class="section-title">Let's Work Together</h2>
+    <div class="contact-split">
+      <div class="contact-left">
+        <div class="big-quote">"Got a project in mind? I'd love to hear about it."</div>
+        <p>Whether you need a backend system, automation, or just some Linux wisdom – I'm available for freelance and remote collaborations.</p>
+        <div class="contact-details">
+          <div><i class="fa-regular fa-envelope"></i> anmol.khadka@email.com</div>
+          <div><i class="fa-regular fa-location-dot"></i> Kathmandu, Nepal</div>
+          <div><i class="fa-regular fa-briefcase"></i> Available for freelance & remote</div>
+          <div style="margin-top:1rem;">
+            <a href="#" style="color:var(--green-deep); margin-right:1rem;"><i class="fab fa-github fa-xl"></i></a>
+            <a href="#" style="color:var(--green-deep); margin-right:1rem;"><i class="fab fa-linkedin fa-xl"></i></a>
+            <a href="#" style="color:var(--green-deep);"><i class="fab fa-x-twitter fa-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your name" required>
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email address" required>
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required>
+            <span class="error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn"><span class="btn-text">Send Message</span> <i class="fa-solid fa-spinner fa-spin"></i></button>
+          <div class="success-message" id="formSuccess"><i class="fa-regular fa-circle-check"></i> Thanks! I'll reply soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>© 2024 Anmol Khadka — Built with ❤️ and Python <i class="fa-regular fa-terminal"></i></div>
+      <div>
+        <a href="#hero">Home</a> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#projects">Projects</a>
+      </div>
+      <div><a href="#"><i class="fab fa-github"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-x-twitter"></i></a></div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <div class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></div>
+
+  <!-- ALL JAVASCRIPT (vanilla) -->
+  <script>
+       (function() {
+      // ----- NAVBAR SCROLL EFFECT -----
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+      });
+
+      // ----- MOBILE HAMBURGER -----
+      const hamburger = document.getElementById('hamburgerBtn');
+      const navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('mobile-open');
+      });
+      // close on link click (mobile)
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('mobile-open');
+        });
+      });
+
+      // ----- TYPING ANIMATION -----
+      const typedSpan = document.getElementById('typed-text');
+      const phrases = ["Python Developer.", "Web Developer.", "Linux Master.", "Open Source Enthusiast."];
+      let i = 0, j = 0, currentPhrase = '', isDeleting = false;
+      function typeEffect() {
+        if (i < phrases.length) {
+          if (!isDeleting && j <= phrases[i].length) {
+            currentPhrase = phrases[i].substring(0, j++);
+            typedSpan.textContent = currentPhrase;
+          }
+          if (isDeleting && j <= phrases[i].length && j >= 0) {
+            currentPhrase = phrases[i].substring(0, j--);
+            typedSpan.textContent = currentPhrase;
+          }
+          if (j === phrases[i].length && !isDeleting) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1500);
+            return;
+          }
+          if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % phrases.length;
+          }
+        }
+        setTimeout(typeEffect, isDeleting ? 80 : 120);
+      }
+      typeEffect();
+
+      // ----- INTERSECTION OBSERVER (fade-up) -----
+      const sections = document.querySelectorAll('.section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            // optional: update active nav link
+            const id = entry.target.getAttribute('id');
+            document.querySelectorAll('.nav-links a').forEach(a => {
+              a.classList.remove('active');
+              if (a.getAttribute('href') === '#' + id) a.classList.add('active');
+            });
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -50px 0px' });
+      sections.forEach(s => observer.observe(s));
+
+      // ----- SCROLL TO TOP -----
+      const scrollBtn = document.getElementById('scrollTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) scrollBtn.classList.add('visible');
+        else scrollBtn.classList.remove('visible');
+      });
+      scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // ----- FORM VALIDATION (pure js) -----
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let valid = true;
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const subject = document.getElementById('subject');
+        const message = document.getElementById('message');
+        const nameErr = document.getElementById('nameError');
+        const emailErr = document.getElementById('emailError');
+        const subjectErr = document.getElementById('subjectError');
+        const messageErr = document.getElementById('messageError');
+        nameErr.textContent = ''; emailErr.textContent = ''; subjectErr.textContent = ''; messageErr.textContent = '';
+
+        if (!name.value.trim()) { nameErr.textContent = 'Name is required'; valid = false; }
+        if (!email.value.trim()) { emailErr.textContent = 'Email is required'; valid = false; }
+        else if (!/^\S+@\S+\.\S+$/.test(email.value)) { emailErr.textContent = 'Invalid email'; valid = false; }
+        if (!subject.value.trim()) { subjectErr.textContent = 'Subject is required'; valid = false; }
+        if (!message.value.trim()) { messageErr.textContent = 'Message cannot be empty'; valid = false; }
+
+        if (valid) {
+          const btn = document.getElementById('submitBtn');
+          btn.classList.add('loading');
+          setTimeout(() => {
+            btn.classList.remove('loading');
+            document.getElementById('formSuccess').style.display = 'block';
+            form.reset();
+            setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 4000);
+          }, 1200);
+        }
+      });
+
+      // ----- CLOSE MOBILE MENU ON RESIZE (if open) -----
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navLinks.classList.contains('mobile-open')) {
+          navLinks.classList.remove('mobile-open');
+          hamburger.classList.remove('active');
+        }
+      });
+    })();
+  </script>
+  <!-- make sure initial sections without observer get fade-in if visible -->
+  <script>
+    (function() {
+      // trigger for first section
+      if (window.scrollY === 0) document.getElementById('hero').classList.add('fade-in');
+    })();
+  </script>
+</body>
+</html>
